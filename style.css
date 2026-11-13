@@ -1,0 +1,301 @@
+.fa-instruction-sets:before {
+    content: "\f5fd";
+}
+
+.instructionsets-hidden {
+    display: none !important;
+}
+
+#instructionsets-toolbar-button {
+    cursor: pointer;
+}
+
+#instructionsets-panel {
+    min-width: min(56rem, calc(100vw - 2rem));
+    max-width: min(72rem, calc(100vw - 2rem));
+}
+
+#instructionsets-panel .text_pole,
+#instructionsets-panel .menu_button {
+    margin: 0;
+}
+
+.instructionsets-panel-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
+
+.instructionsets-panel-header,
+.instructionsets-global-controls,
+.instructionsets-actions-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.instructionsets-global-controls {
+    gap: 15px;
+}
+
+.instructionsets-panel-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.instructionsets-field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 12rem;
+}
+
+.instructionsets-field-inline {
+    flex-direction: row;
+    align-items: center;
+    min-width: 0;
+}
+
+.instructionsets-field-inline > span {
+    white-space: nowrap;
+}
+
+.instructionsets-position-field select,
+.instructionsets-depth-field input,
+.instructionsets-role-field select,
+.instructionsets-preset-field select {
+    flex: 1 1 auto;
+}
+
+.instructionsets-field > span {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.instructionsets-enabled-wrap,
+.instructionsets-preset-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.instructionsets-global-enabled,
+.instructionsets-section-enabled {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.instructionsets-section-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.instructionsets-subsections-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 10px;
+}
+
+.instructionsets-section,
+.instructionsets-section-off,
+.instructionsets-subsection,
+.instructionsets-sort-placeholder {
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.instructionsets-section,
+.instructionsets-section-off {
+    margin-bottom: 1px;
+}
+
+.instructionsets-section:last-child,
+.instructionsets-section-off:last-child {
+    margin-bottom: 0;
+}
+
+.instructionsets-section-off {
+    opacity: 0.4;
+    filter: grayscale(1);
+    transition: opacity var(--animation-duration-3x);
+}
+
+.instructionsets-section-off:hover:not(.instructionsets-suppress-hover) {
+    opacity: 1;
+    filter: grayscale(0.5);
+}
+
+.instructionsets-section-off.instructionsets-suppress-hover:hover {
+    opacity: 0.4;
+    filter: grayscale(1);
+}
+
+#instructionsets-panel .fa-toggle-on {
+    color: var(--SmartThemeQuoteColor);
+}
+
+.instructionsets-section .menu_button,
+.instructionsets-section-off .menu_button {
+    width: 24px;
+    height: 24px;
+}
+
+.instructionsets-sort-placeholder {
+    min-height: 3rem;
+    background: color-mix(in srgb, var(--SmartThemeQuoteColor, var(--SmartThemeBorderColor)) 15%, transparent);
+}
+
+.instructionsets-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 1px;
+    flex-wrap: wrap;
+}
+
+.instructionsets-drag-handle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8rem;
+    min-width: 1.8rem;
+    cursor: grab;
+    opacity: 0.7;
+}
+
+.instructionsets-drag-handle:hover {
+    opacity: 1;
+}
+
+.instructionsets-drag-handle:active {
+    cursor: grabbing;
+}
+
+.instructionsets-row-section .instructionsets-name-input,
+.instructionsets-row-subsection .instructionsets-name-input,
+.instructionsets-row-section .instructionsets-subsection-select {
+    flex: 1 1 12rem;
+    min-width: 0;
+}
+
+.instructionsets-order-input {
+    width: 4.5rem;
+    min-width: 4.5rem;
+    text-align: center;
+}
+
+.instructionsets-add-subsection {
+    padding-inline: 6px;
+}
+
+.instructionsets-section-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    border-top: 1px solid color-mix(in srgb, var(--SmartThemeBorderColor) 60%, transparent);
+}
+
+.instructionsets-subsection-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    border-top: 1px solid color-mix(in srgb, var(--SmartThemeBorderColor) 60%, transparent);
+}
+
+.instructionsets-subsection-editor-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 5px;
+    align-items: start;
+}
+
+.instructionsets-content-input {
+    min-height: 1rem;
+    resize: vertical;
+}
+
+.instructionsets-empty-state {
+    padding: 5px;
+    border: 1px dashed var(--SmartThemeBorderColor);
+    border-radius: 10px;
+    opacity: 0.85;
+}
+
+.instructionsets-popup-editor-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.instructionsets-popup-editor {
+    width: 100%;
+    min-height: min(65vh, 38rem);
+    resize: none;
+}
+
+#instructionsets-depth {
+    max-width: 60px;
+}
+
+.instructionsets-inline-labeled-field {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    min-width: 0;
+    margin-left: 10px;
+}
+
+.instructionsets-inline-labeled-field > span {
+    white-space: nowrap;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.instructionsets-inline-labeled-field > .text_pole {
+    margin: 0;
+}
+
+.instructionsets-row-section .instructionsets-name-field,
+.instructionsets-row-subsection .instructionsets-name-field {
+    flex: 1 1 12rem;
+    min-width: 0;
+}
+
+.instructionsets-row-section .instructionsets-name-field .instructionsets-name-input,
+.instructionsets-row-subsection .instructionsets-name-field .instructionsets-name-input {
+    flex: 1 1 12rem;
+    min-width: 0;
+}
+
+.instructionsets-order-field {
+    flex: 0 0 auto;
+}
+
+.instructionsets-active-field {
+    flex: 1 1 14rem;
+    min-width: 0;
+}
+
+.instructionsets-active-field .instructionsets-subsection-select,
+.instructionsets-preset-field .text_pole {
+    flex: 1 1 12rem;
+    min-width: 0;
+}
+
+@media (max-width: 850px) {
+    #instructionsets-panel {
+        min-width: calc(100vw - 2rem);
+    }
+
+    .instructionsets-subsection-editor-row {
+        grid-template-columns: 1fr;
+    }
+}

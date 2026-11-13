@@ -1,0 +1,13 @@
+{
+  "display_name": "Instruction Sets",
+  "loading_order": 25,
+  "requires": [],
+  "optional": [],
+  "dependencies": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "Bartasx",
+  "version": "1.0.0",
+  "auto_update": false,
+  "homePage": "https://github.com/Bartasx4/SillyTavern-InstructionSets"
+}
